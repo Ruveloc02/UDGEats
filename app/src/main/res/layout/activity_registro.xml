@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:clickable="false"
+    tools:context=".RegistroActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/food_20582" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="222dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editTextTextPersonName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="29dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="222dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="40dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_username"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="222dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editTextTextPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="29dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="226dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editTextTextPassword2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="29dp"
+        android:background="#11000000"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="18sp"
+        android:popupBackground="#11000000"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="BotonDePrueba">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Registrarse"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
